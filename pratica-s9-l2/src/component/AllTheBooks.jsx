@@ -37,7 +37,7 @@ class AllTheBooks extends Component {
             {this.state.library.map(book => {
             return ( 
             <Col>
-            <Card style={{width: "20rem"}} key={book.asin}> 
+            <Card className="shadow" style={{width: "20rem"}} key={book.asin}> 
             <Card.Img variant="top" src={book.img} style={{aspectRatio: "3/4"}}/>
             <Card.Body>
               <Card.Title className="text-truncate">{book.title}</Card.Title>
